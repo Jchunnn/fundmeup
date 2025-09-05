@@ -1,4 +1,241 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="shadow">
+  <div class="container">
+    <div class="d-flex justify-content-between py-3 d-md-none">
+      <!-- small logo -->
+      <a href="index.html" class="d-md-none">
+        <img src="/assets/images/Frame 15.png" alt="logo" />
+      </a>
+      <!-- hamburger -->
+      <div>
+        <!-- hamburger button -->
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+        >
+          <span class="material-icons-outlined pt-1 dehaze d-md-none">
+            dehaze
+          </span>
+        </button>
+        <!-- 選單內容 -->
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <!-- offcanvas 視窗 -->
+          <div class="offcanvas-header">
+            <!-- 左上logo -->
+            <h5 class="offcanvas-title" id="staticBackdropLabel">
+              <a href="index.html">
+                <img src="/assets/images/Frame 15.png" alt="logo" />
+              </a>
+            </h5>
+            <!-- 關閉btn -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- 行情.課程 -->
+          <div class="offcanvas-body text-center">
+            <div class="py-2"><a href="#">市場新聞及行情</a></div>
+            <div class="py-2"><a href="#">投資課程</a></div>
+          </div>
+          <!-- 下方兩個btn -->
+          <div
+            class="offcanvas-footer text-center mb-3 container position-relative z-0"
+            data-bs-target="#offcanvasThree"
+          >
+            <button
+              class="btn btn-outline-primary-600 py-4 fw-bolder w-100"
+              style="width: 351px"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdropThree"
+              aria-controls="staticBackdropThree"
+            >
+              立即訂閱
+            </button>
+          </div>
+          <div
+            class="offcanvas-footer text-center container"
+            data-bs-target="#offcanvasTwo"
+          >
+            <button
+              class="btn btn-primary-600 py-4 fw-bolder mb-6 w-100"
+              style="width: 351px"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdropTwo"
+              aria-controls="staticBackdropTwo"
+            >
+              登入 / 註冊
+            </button>
+            <img
+              src="/assets/images/Mobile- Section1 - BG 1.png"
+              alt="background"
+              class="position-absolute bg-img"
+            />
+            <img
+              src="/assets/images/Mobile- Section1 - BG 2.png"
+              alt="background"
+              class="position-absolute bg-img-2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 電腦版 -->
+    <div class="d-md-flex justify-content-between py-3 d-none d-md-block">
+      <!-- big logo -->
+      <a href="index.html">
+        <img src="/assets/images/big-logo.png" alt="logo" class="pt-2" />
+      </a>
+      <div class="d-md-flex fs-5">
+        <!-- 市場新聞及行情 -->
+        <a href="#">
+          <p class="text-grayscale-700 pt-3 me-5">市場新聞及行情</p>
+        </a>
+        <a href="#">
+          <p class="text-grayscale-700 pt-3 me-5">投資課程</p>
+        </a>
+        <button
+          class="btn btn-outline-primary-600 py-1 px-3 me-5 fw-bolder"
+          style="height: 56px"
+        >
+          立即訂閱
+        </button>
+        <button
+          class="btn btn-primary-600 py-1 px-3 me-5 fw-bolder"
+          style="height: 56px"
+        >
+          登入 / 註冊
+          <span class="material-icons-outlined align-bottom"> ads_click </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- offcanvasTwo -->
+<div
+  class="offcanvas offcanvas-start d-md-none"
+  data-bs-backdrop="static"
+  tabindex="-1"
+  id="staticBackdropTwo"
+  aria-labelledby="staticBackdropLabelTwo"
+>
+  <div class="offcanvas-header justify-content-between position-relative">
+    <!-- 左上logo -->
+    <h5 class="offcanvas-title" id="staticBackdropLabel">
+      <a href="index.html">
+        <img src="/assets/images/Frame 15.png" alt="logo" />
+      </a>
+    </h5>
+    <!-- personal pic -->
+    <div class="d-flex">
+      <h5 class="offcanvas-title ms-auto" id="staticBackdropLabel">
+        <img src="/assets/images/person-img.png" alt="person" />
+      </h5>
+      <button
+        type="button"
+        class="btn-close mt-2 px-3"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+  </div>
+  <div class="offcanvas-body text-center">
+    <h5 class="text-primary-600 fs-5 fw-bolder py-5">Mavis Lee</h5>
+    <p class="py-2 mb-2"><a href="#">個人資訊</a></p>
+    <p class="py-2 mb-2"><a href="#">訂閱管理</a></p>
+    <p class="py-2 mb-2"><a href="#">收藏課程</a></p>
+    <p class="py-2 mb-2"><a href="#">觀看紀錄</a></p>
+    <p class="py-2 mb-2"><a href="#">訂閱資訊</a></p>
+    <p class="py-2 mb-2"><a href="#">登出</a></p>
+  </div>
+  <img
+    src="/assets/images/Mobile- Section1 - BG 1.png"
+    alt="background"
+    class="position-absolute bg-img"
+  />
+  <!-- 下方訂閱btn -->
+  <div
+    class="offcanvas-footer text-center mb-3 container position-relative"
+    data-bs-target="#offcanvasThree"
+  >
+    <button
+      class="btn btn-outline-primary-600 py-4 fw-bolder mb-6 w-100"
+      style="width: 351px"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#staticBackdropThree"
+      aria-controls="staticBackdropThree"
+    >
+      立即訂閱
+    </button>
+
+    <img
+      src="/assets/images/Mobile- Section1 - BG 2.png"
+      alt="background"
+      class="position-absolute bg-img-2"
+    />
+  </div>
+</div>
+
+<!-- offcanvasThree -->
+<div
+  class="offcanvas offcanvas-start d-md-none"
+  data-bs-backdrop="static"
+  tabindex="-1"
+  id="staticBackdropThree"
+  aria-labelledby="staticBackdropLabelThree"
+>
+  <div class="offcanvas-header justify-content-between position-relative">
+    <!-- 左上logo -->
+    <h5 class="offcanvas-title" id="staticBackdropLabel">
+      <a href="index.html">
+        <img src="/assets/images/Frame 15.png" alt="logo" />
+      </a>
+    </h5>
+    <!-- personal pic -->
+    <div class="d-flex">
+      <h5 class="offcanvas-title ms-auto" id="staticBackdropLabel">
+        <img src="/assets/images/person-img.png" alt="person" />
+      </h5>
+      <button
+        type="button"
+        class="btn-close mt-2 px-3"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+  </div>
+  <div class="offcanvas-body text-center">
+    <h5 class="text-primary-600 fs-5 fw-bolder py-5">Mavis Lee</h5>
+    <p class="py-2 mb-2"><a href="#">個人資訊</a></p>
+    <p class="py-2 mb-2"><a href="#">訂閱管理</a></p>
+    <p class="py-2 mb-2"><a href="#">收藏課程</a></p>
+    <p class="py-2 mb-2"><a href="#">觀看紀錄</a></p>
+    <p class="py-2 mb-2"><a href="#">訂閱資訊</a></p>
+    <p class="py-2 mb-2"><a href="#">登出</a></p>
+  </div>
+  <img
+    src="/assets/images/Mobile- Section1 - BG 1.png"
+    alt="background"
+    class="position-absolute bg-img"
+  />
+  <img
+    src="/assets/images/Mobile- Section1 - BG 2.png"
+    alt="background"
+    class="position-absolute bg-img-2"
+  />
+</div>

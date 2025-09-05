@@ -1,4 +1,30 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.bg-opacity-30 {
+  background-color: #fbfbfb4d;
+  opacity: 30%;
+}
+.dehaze {
+  color: $primary-600;
+}
+
+a {
+  text-decoration: none;
+}
+.w-100 {
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+.z-0 {
+  z-index: 0;
+}
+.bg-img {
+  z-index: -1;
+  left: -200px;
+  top: -600px;
+}
+.bg-img-2 {
+  z-index: -1;
+  left: -200px;
+  bottom: 0;
 }
