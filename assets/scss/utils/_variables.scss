@@ -496,7 +496,11 @@ $spacers: (
   5: $spacer * 1.5,
   6: $spacer * 2,
   7: $spacer * 3,
-  8: $spacer * 5
+  8: $spacer * 4,
+  9: $spacer * 5,
+  10: $spacer * 6,
+  11: $spacer * 7,
+  12: $spacer * 8.25
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -748,9 +752,10 @@ $display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
   3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem,
+  4: 3.75rem,
+  5: 3.5rem,
+  6: 3rem,
+  7: 2.5rem,
 ) !default;
 
 $display-font-family: null !default;

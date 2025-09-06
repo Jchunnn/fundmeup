@@ -13,16 +13,38 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit,
-          iusto odio assumenda alias id nobis earum!
+    <div
+      class="container text-center py-9 d-md-flex justify-content-md-between text-md-start"
+    >
+      <div class="py-md-5">
+        <p class="text-primary-500 fw-bolder mb-4 fs-md-3">
+          \ 專為投資新手設計 /
         </p>
+        <h1 class="fs-2 display-md-4 text-primary-800">
+          投資新手變高手<br />就從
+          <img src="/assets/images/big-logo.png" alt="logo" class="pt-4" /> 開始
+        </h1>
+        <p class="mt-5">
+          從零開始學投資，<br />
+          過模擬帳戶安全練習， <br />讓財金小白也能輕鬆入門股市理財
+        </p>
+        <button
+          class="btn btn-primary-600 my-5 p-4 fw-bolder"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdropThree"
+          aria-controls="staticBackdropThree"
+        >
+          立即訂閱
+        </button>
+      </div>
+      <!-- bannerimg -->
+      <div>
+        <img
+          src="/assets/images/Banner-img.png"
+          alt="Banner-img"
+          class="bannerimg-md"
+        />
       </div>
     </div>
 
