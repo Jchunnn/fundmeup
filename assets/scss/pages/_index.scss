@@ -32,4 +32,23 @@
   .display-lg-4 {
     font-size: 3.75rem;
   }
+  .row-lg {
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+  .col-lg-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 5);
+  }
+  .col-lg-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 7);
+  }
+}
+@media (max-width: 1230px) {
+  .display-lg-3 {
+    font-size: 2.5rem;
+  }
 }
