@@ -1,3 +1,6 @@
+img {
+  max-width: 100%;
+}
 .bg-opacity-30 {
   background-color: #fbfbfb4d;
   opacity: 30%;
@@ -27,4 +30,14 @@ ul {
   z-index: -1;
   left: -200px;
   bottom: 0;
+}
+.dropdown-menu {
+  opacity: 90%;
+  max-width: 100%;
+}
+.dropdown-toggle:active {
+  border: 0;
+}
+.dropdown-toggle:focus {
+  border: 0;
 }

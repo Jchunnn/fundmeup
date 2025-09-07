@@ -1,19 +1,30 @@
 .index-title {
   font-size: 100px;
 }
-img {
+.img {
   max-width: 100%;
 }
 .bannerimg-lg {
   width: 746px;
+  max-width: 100%;
 }
 .sectionOneBgOne {
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+.sectionOneBgTwo {
+  z-index: -1;
+  left: 0;
+  top: 215px;
+}
+.sectionOneLgBgOne {
   z-index: -1;
   overflow: hidden;
   top: 0;
   right: 0;
 }
-.sectionOneBgTwo {
+.sectionOneLgBgTwo {
   z-index: -1;
   overflow: hidden;
 }
