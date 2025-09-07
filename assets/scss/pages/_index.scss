@@ -5,8 +5,7 @@
   max-width: 100%;
 }
 .bannerimg-lg {
-  width: 746px;
-  max-width: 100%;
+  width: 100%; /*  */
 }
 .sectionOneBgOne {
   z-index: -1;
@@ -27,4 +26,10 @@
 .sectionOneLgBgTwo {
   z-index: -1;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .display-lg-4 {
+    font-size: 3.75rem;
+  }
 }
