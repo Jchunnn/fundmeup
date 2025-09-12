@@ -57,6 +57,11 @@
     padding-right: 12px;
     width: calc(100% / 12 * 5);
   }
+  .col-lg-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 6);
+  }
   .col-lg-7 {
     padding-left: 12px;
     padding-right: 12px;
@@ -108,153 +113,38 @@
   color: $grayscale-100;
 }
 /* louise */
-.main-title {
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: var(--bs-grayscale-900);
-}
-
-/* 市場要聞區塊 */
-.market-news {
-  margin-bottom: 60px;
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-  height: 56px;
-}
-
-.section-title {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--bs-grayscale-900);
-}
-
-.more-link {
-  color: var(--bs-primary-600);
-  text-decoration: none;
-  font-size: 0.8rem;
-  cursor: pointer;
-  margin-right: 16px;
-}
-
 .more-link:hover {
   text-decoration: underline;
 }
-
-.news-grid {
-  display: flex;
-  gap: 20px;
-}
-
-.featured-news {
-  width: 50%;
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
 .chart-image {
   width: 100%;
-  height: 358px;
-  position: relative;
-}
-
-.news-list {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .news-item {
   background: white;
   padding: 12px 24px;
   border-radius: 12px;
-  border: 2px solid var(--bs-primary-100);
+  border: 2px solid $primary-100;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .news-item:hover {
-  background: var(--bs-primary-50);
+  background: $primary-50;
 }
 
 .news-title {
-  font-size: 0.8rem;
   font-weight: bold;
-  color: var(--bs-grayscale-900);
+  color: $grayscale-900;
   margin-bottom: 4px;
   line-height: 1.4;
 }
 
 .news-time {
   font-size: 14px;
-  color: var(--bs-grayscale-700);
+  color: $grayscale-700;
   text-align: right;
-}
-
-/* 底部區塊 */
-.bottom-sections {
-  flex-direction: row;
-  display: flex;
-
-  gap: 24px;
-}
-
-.content-item {
-  gap: 12px;
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.content-item:hover {
-  cursor: pointer;
-}
-
-.content-image {
-  width: 306px;
-  height: auto;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-}
-
-.content-title {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--bs-grayscale-900);
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-.content-title:hover {
-  color: var(--bs-primary-500);
-}
-.content-description {
-  font-size: 12px;
-  color: var(--bs-grayscale-700);
-  line-height: 1.5;
-}
-
-/* 響應式設計 */
-@media (max-width: 992px) {
-  .news-grid,
-  .bottom-sections,
-  .content-item {
-    flex-direction: column;
-  }
-  .featured-news,
-  .news-list {
-    width: 100%;
-  }
-  .content-image {
-    width: 100%;
-  }
-  .chart-image {
-    height: auto;
-  }
 }
