@@ -27,8 +27,24 @@
   z-index: -1;
   overflow: hidden;
 }
+.accordion-border {
+  border: 2px solid $primary-100;
+  border-radius: 8px;
+}
+.accordion-button::after {
+  content: "+";
+  font-size: 1.25rem;
+  background-image: none !important;
+}
 
+.accordion-button:not(.collapsed)::after {
+  content: "−";
+}
 @media (min-width: 992px) {
+  body .my-lg-100 {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
   .display-lg-4 {
     font-size: 3.75rem;
   }
@@ -46,9 +62,199 @@
     padding-right: 12px;
     width: calc(100% / 12 * 7);
   }
+  .w-lg-416 {
+    width: 416px;
+    max-width: 100%;
+  }
 }
 @media (max-width: 1230px) {
   .display-lg-3 {
     font-size: 2.5rem;
+  }
+}
+
+/* york card */
+.check-circle {
+  color: $primary-700;
+}
+.cancel-circle {
+  color: $grayscale-600;
+}
+.no-bg {
+  background-color: transparent; /* 移除白底 */
+  border-radius: 0; /* 移除圓角，讓外層顯示出來 */
+}
+.primary-200-border {
+  border: 1px solid $primary-200;
+  border-radius: 12px;
+}
+.multi-badge {
+  top: 8px;
+  left: -8px;
+}
+.blue-shadow {
+  box-shadow: 2px 2px 30px 0px #0098ff2e;
+}
+.btn-custom {
+  border: 1px solid $primary-600;
+  color: $primary-600;
+}
+.btn-custom:hover {
+  background-color: $primary-600;
+  color: $grayscale-100;
+}
+.btn.btn-custom:active {
+  background-color: $primary-600;
+  color: $grayscale-100;
+}
+/* louise */
+.main-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--bs-grayscale-900);
+}
+
+/* 市場要聞區塊 */
+.market-news {
+  margin-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 56px;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--bs-grayscale-900);
+}
+
+.more-link {
+  color: var(--bs-primary-600);
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+.news-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.featured-news {
+  width: 50%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.chart-image {
+  width: 100%;
+  height: 358px;
+  position: relative;
+}
+
+.news-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news-item {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 2px solid var(--bs-primary-100);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  background: var(--bs-primary-50);
+}
+
+.news-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--bs-grayscale-900);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.news-time {
+  font-size: 14px;
+  color: var(--bs-grayscale-700);
+  text-align: right;
+}
+
+/* 底部區塊 */
+.bottom-sections {
+  flex-direction: row;
+  display: flex;
+
+  gap: 24px;
+}
+
+.content-item {
+  gap: 12px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+  cursor: pointer;
+}
+
+.content-image {
+  width: 306px;
+  height: auto;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--bs-grayscale-900);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.content-title:hover {
+  color: var(--bs-primary-500);
+}
+.content-description {
+  font-size: 12px;
+  color: var(--bs-grayscale-700);
+  line-height: 1.5;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+  .news-grid,
+  .bottom-sections,
+  .content-item {
+    flex-direction: column;
+  }
+  .featured-news,
+  .news-list {
+    width: 100%;
+  }
+  .content-image {
+    width: 100%;
+  }
+  .chart-image {
+    height: auto;
   }
 }
