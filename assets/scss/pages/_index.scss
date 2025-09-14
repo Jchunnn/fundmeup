@@ -47,15 +47,23 @@
 .text-primary-500-hover:hover {
   color: $primary-500;
 }
+.favorite {
+  right: 10px;
+  bottom: 240px;
+}
 .arrowLeft {
-  top: 196px;
+  top: 340px;
   left: -50px;
   cursor: pointer;
 }
 .arrowRight {
-  top: 196px;
+  top: 340px;
   right: -50px;
   cursor: pointer;
+}
+.primary-100-border {
+  border: 1px solid $primary-100;
+  border-radius: 8px;
 }
 @media (min-width: 992px) {
   body .my-lg-100 {
@@ -68,6 +76,11 @@
   .row-lg {
     margin-right: -12px;
     margin-left: -12px;
+  }
+  .col-lg-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 3);
   }
   .col-lg-5 {
     padding-left: 12px;
