@@ -27,6 +27,10 @@
   z-index: -1;
   overflow: hidden;
 }
+
+.f-nowrap {
+  flex-wrap: nowrap;
+}
 .accordion-border {
   border: 2px solid $primary-100;
   border-radius: 8px;
@@ -39,6 +43,19 @@
 
 .accordion-button:not(.collapsed)::after {
   content: "−";
+}
+.text-primary-500-hover:hover {
+  color: $primary-500;
+}
+.arrowLeft {
+  top: 196px;
+  left: -50px;
+  cursor: pointer;
+}
+.arrowRight {
+  top: 196px;
+  right: -50px;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   body .my-lg-100 {
@@ -93,9 +110,15 @@
   border: 1px solid $primary-200;
   border-radius: 12px;
 }
+.course-badge {
+  top: 12px;
+  left: 12px;
+  border-radius: 12px;
+}
 .multi-badge {
   top: 8px;
   left: -8px;
+  border-radius: 12px;
 }
 .blue-shadow {
   box-shadow: 2px 2px 30px 0px #0098ff2e;
