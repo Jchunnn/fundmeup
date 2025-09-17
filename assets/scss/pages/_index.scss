@@ -26,6 +26,7 @@
 .sectionOneLgBgTwo {
   z-index: -1;
   overflow: hidden;
+  bottom: -200px;
 }
 
 .f-nowrap {
@@ -49,7 +50,7 @@
 }
 .favorite {
   right: 10px;
-  bottom: 240px;
+  bottom: 280px;
   cursor: pointer;
 }
 .arrowLeft {

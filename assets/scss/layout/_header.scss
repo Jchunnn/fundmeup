@@ -42,3 +42,10 @@ ul {
 .primary-500-active:active {
   background-color: $primary-100;
 }
+.nav-custom {
+  color: $grayscale-700;
+}
+.nav-custom:hover {
+  color: $primary-500;
+  font-weight: bolder;
+}

@@ -14,7 +14,7 @@
   <body>
     <%- include('./layout/header'); -%>
     <div class="position-relative z-0 overflow-hidden">
-      <div class="container text-center py-9 text-lg-start">
+      <div class="container text-center py-9 text-lg-start position-relative">
         <div class="row-lg d-lg-flex">
           <div class="col-lg-5">
             <div class="py-lg-5">
@@ -82,532 +82,586 @@
     </div>
 
     <!-- louise -->
-    <div class="container my-lg-100">
-      <h1
-        class="main-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-6 mb-lg-7"
-      >
-        市場新聞及行情
-      </h1>
-      <!-- 市場要聞區塊 -->
-      <div class="mb-8">
-        <div
-          class="d-flex justify-content-between align-center mb-2"
-          style="height: 56px"
+    <div class="position-relative z-0">
+      <div class="container my-lg-100">
+        <h1
+          class="main-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-6 mb-lg-7"
         >
-          <h2 class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900">
-            市場要聞
-          </h2>
-          <a href="#" class="more-link text-primary-600 fs-6 px-5 fw-bolder"
-            >閱讀更多 ></a
+          市場新聞及行情
+        </h1>
+        <!-- 市場要聞區塊 -->
+        <div class="mb-8">
+          <div
+            class="d-flex justify-content-between align-center mb-2"
+            style="height: 56px"
           >
-        </div>
-        <div class="d-lg-flex">
-          <div class="row pb-7">
-            <div class="col-lg-6">
-              <img
-                src="../assets/images/unsplash_Wb63zqJ5gnE.png"
-                alt="chart"
-                class="chart-image"
-              />
-            </div>
-
-            <div class="col-lg-6 pt-5 pt-lg-0">
-              <div class="news-item mb-5">
-                <div class="news-title fs-5">
-                  台積電法說會釋出樂觀訊號，Q4營收展望優於預期
-                </div>
-                <div class="news-time">3小時前</div>
-              </div>
-
-              <div class="news-item mb-5">
-                <div class="news-title fs-5">
-                  科技股全面走強，半導體類股領漲台股收紅
-                </div>
-                <div class="news-time">3小時前</div>
-              </div>
-
-              <div class="news-item mb-5">
-                <div class="news-title fs-5">
-                  美「232條款」關稅恐成真！台廠恐近兩成營收受衝擊，五大檔...
-                </div>
-                <div class="news-time">4小時前</div>
-              </div>
-
-              <div class="news-item mb-5">
-                <div class="news-title fs-5">
-                  美股昨夜收漲，亞洲股市今日普遍開高
-                </div>
-                <div class="news-time">5小時前</div>
-              </div>
-            </div>
+            <h2 class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900">
+              市場要聞
+            </h2>
+            <a
+              href="news.html"
+              class="more-link text-primary-600 fs-6 px-5 fw-bolder"
+              >閱讀更多 ></a
+            >
           </div>
-        </div>
-        <div class="d-lg-flex">
-          <div class="row">
-            <div class="col-lg-6">
-              <!-- 新手解讀 -->
-              <div class="pb-5 me-lg-5">
-                <div
-                  class="d-flex justify-content-between align-center mb-2"
-                  style="height: 56px"
-                >
-                  <h2
-                    class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900"
-                  >
-                    新手解讀
-                  </h2>
-                  <a
-                    href="#"
-                    class="more-link text-primary-600 fs-6 px-5 fw-bolder"
-                    >閱讀更多 ></a
-                  >
-                </div>
-                <div class="row align-center">
-                  <div class="col-12 col-md-6 order-1 order-md-1 mb-2">
-                    <img
-                      src="/assets/images/unsplash_Hb6uWq0i4MI.png"
-                      alt="新手解讀"
-                      class="chart-image-md chart-image-lg mb-2"
-                      style="border-radius: 16px"
-                    />
-                  </div>
-                  <div class="col-12 col-md-6 order-2 order-md-2">
-                    <h3 class="fw-bolder fs-5 text-grayscale-900">
-                      【台積電法說會】新手必懂：為什麼法說會這麼重要？
-                    </h3>
-                    <p class="text-grayscale-700">
-                      法說會全稱「法人說明會」，是公司對投資機構說明營運狀況的會議。台積電作為護國神山，其法說會內容直接影響台股走勢。
-                    </p>
-                  </div>
-                </div>
+          <div class="d-lg-flex">
+            <div class="row pb-7">
+              <div class="col-lg-6">
+                <img
+                  src="../assets/images/unsplash_Wb63zqJ5gnE.png"
+                  alt="chart"
+                  class="chart-image"
+                />
               </div>
-            </div>
-            <div class="col-lg-6">
-              <!-- 研究報告 -->
-              <div class="pb-5 me-lg-5">
-                <div
-                  class="d-flex justify-content-between align-center mb-2"
-                  style="height: 56px"
-                >
-                  <h2
-                    class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900"
-                  >
-                    研究報告
-                  </h2>
-                  <a
-                    href="#"
-                    class="more-link text-primary-600 fs-6 px-5 fw-bolder"
-                    >閱讀更多 ></a
-                  >
+
+              <div class="col-lg-6 pt-5 pt-lg-0">
+                <div class="news-item mb-5">
+                  <div class="news-title fs-5">
+                    台積電法說會釋出樂觀訊號，Q4營收展望優於預期
+                  </div>
+                  <div class="news-time">3小時前</div>
                 </div>
-                <div class="row align-center">
-                  <div class="col-12 col-md-6 order-1 order-md-1 mb-2">
-                    <img
-                      src="/assets/images/unsplash_fiXLQXAhCfk.png"
-                      alt="研究報告"
-                      class="chart-image chart-image-md chart-image-lg mb-2"
-                    />
+
+                <div class="news-item mb-5">
+                  <div class="news-title fs-5">
+                    科技股全面走強，半導體類股領漲台股收紅
                   </div>
-                  <div class="col-12 col-md-6 order-2 order-md-2">
-                    <h3 class="fw-bolder fs-5 text-primary-500">
-                      台積電 (2330) - AI 晶片需求強勁，目標價上調至 650 元
-                    </h3>
-                    <p class="text-grayscale-700">
-                      受惠於 AI 晶片需求持續增長，預估 Q4
-                      營收將超越指引上限。建議投資人逢低布局，12個月目標價調整至
-                      650 元。技術面上突破前高阻力量。
-                    </p>
+                  <div class="news-time">3小時前</div>
+                </div>
+
+                <div class="news-item mb-5">
+                  <div class="news-title fs-5">
+                    美「232條款」關稅恐成真！台廠恐近兩成營收受衝擊，五大檔...
                   </div>
+                  <div class="news-time">4小時前</div>
+                </div>
+
+                <div class="news-item mb-5">
+                  <div class="news-title fs-5">
+                    美股昨夜收漲，亞洲股市今日普遍開高
+                  </div>
+                  <div class="news-time">5小時前</div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="d-lg-flex">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- 新手解讀 -->
+                <div class="pb-5 me-lg-5">
+                  <div
+                    class="d-flex justify-content-between align-center mb-2"
+                    style="height: 56px"
+                  >
+                    <h2
+                      class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900"
+                    >
+                      新手解讀
+                    </h2>
+                    <a
+                      href="news.html"
+                      class="more-link text-primary-600 fs-6 px-5 fw-bolder"
+                      >閱讀更多 ></a
+                    >
+                  </div>
+                  <div class="row align-center">
+                    <div class="col-12 col-md-6 order-1 order-md-1 mb-2">
+                      <img
+                        src="/assets/images/unsplash_Hb6uWq0i4MI.png"
+                        alt="新手解讀"
+                        class="chart-image-md chart-image-lg mb-2"
+                        style="border-radius: 16px"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 order-2 order-md-2">
+                      <h3 class="fw-bolder fs-5 text-grayscale-900">
+                        【台積電法說會】新手必懂：為什麼法說會這麼重要？
+                      </h3>
+                      <p class="text-grayscale-700">
+                        法說會全稱「法人說明會」，是公司對投資機構說明營運狀況的會議。台積電作為護國神山，其法說會內容直接影響台股走勢。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!-- 研究報告 -->
+                <div class="pb-5 me-lg-5">
+                  <div
+                    class="d-flex justify-content-between align-center mb-2"
+                    style="height: 56px"
+                  >
+                    <h2
+                      class="section-title fs-5 fs-lg-4 fw-bolder text-grayscale-900"
+                    >
+                      研究報告
+                    </h2>
+                    <a
+                      href="news.html"
+                      class="more-link text-primary-600 fs-6 px-5 fw-bolder"
+                      >閱讀更多 ></a
+                    >
+                  </div>
+                  <div class="row align-center">
+                    <div class="col-12 col-md-6 order-1 order-md-1 mb-2">
+                      <img
+                        src="/assets/images/unsplash_fiXLQXAhCfk.png"
+                        alt="研究報告"
+                        class="chart-image chart-image-md chart-image-lg mb-2"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 order-2 order-md-2">
+                      <h3 class="fw-bolder fs-5 text-primary-500">
+                        台積電 (2330) - AI 晶片需求強勁，目標價上調至 650 元
+                      </h3>
+                      <p class="text-grayscale-700">
+                        受惠於 AI 晶片需求持續增長，預估 Q4
+                        營收將超越指引上限。建議投資人逢低布局，12個月目標價調整至
+                        650 元。技術面上突破前高阻力量。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- desktopSectionBg1 -->
       </div>
+      <img
+        src="/assets/images/Section1 - BG 1.png"
+        alt="Section1bg1"
+        class="position-absolute sectionOneBgOne d-none d-lg-flex"
+        style="bottom: -150px"
+      />
     </div>
 
     <!-- mavis -->
-    <div class="container position-relative py-6 my-lg-100">
-      <div class="text-center mb-5 mb-lg-7">
-        <h2 class="section-title fs-3 fs-lg-1 fw-bolder text-grayscale-900">
-          推薦課程
-        </h2>
-      </div>
-      <div class="row d-flex overflow-auto f-nowrap">
-        <div class="col-9 col-lg-4">
-          <div class="card border-0">
-            <img
-              src="/assets/images/unsplash_3r8rcSy0Ffg.png"
-              class="card-img-top chart-image position-relative"
-              alt="股票投資基礎入門"
-            />
-            <span
-              class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
-              style="width: 64px"
-              >新手入門</span
-            >
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                  <img src="/assets/images/star.svg" alt="star" />
-                  <p class="pt-4 ps-1">4.0</p>
-                </div>
-                <p class="pt-4">12 個章節・3 小時</p>
-              </div>
-              <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
-                股票投資基礎入門
-              </h5>
-              <p class="card-text fs-lg-5">
-                從認識股票開始，學習如何分析公司基本面，建立投資組合的基本概念。
-              </p>
-              <a
-                href="#"
-                class="btn primary-600-border text-primary-600 fw-bolder w-100"
-                >開始學習</a
-              >
-            </div>
-          </div>
+    <div class="position-relative z-0">
+      <div class="container py-6 my-lg-100">
+        <div class="text-center mb-5 mb-lg-7">
+          <h2 class="section-title fs-3 fs-lg-1 fw-bolder text-grayscale-900">
+            推薦課程
+          </h2>
         </div>
-        <div class="col-9 col-lg-4">
-          <div class="card border-0">
-            <div>
+        <div class="row d-flex overflow-auto f-nowrap">
+          <div class="col-9 col-lg-4">
+            <div class="card border-0">
               <img
-                src="/assets/images/unsplash_x07ELaNFt34.png"
+                src="/assets/images/unsplash_3r8rcSy0Ffg.png"
                 class="card-img-top chart-image position-relative"
-                alt="台股選股與佈局技巧"
+                alt="股票投資基礎入門"
               />
               <span
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
-                style="width: 64px"
-                >進階策略</span
+                >新手入門</span
               >
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1">4.0</p>
+                  </div>
+                  <p class="pt-4">12 個章節・3 小時</p>
+                </div>
+                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                  股票投資基礎入門
+                </h5>
+                <p class="card-text fs-lg-5">
+                  從認識股票開始，學習如何分析公司基本面，建立投資組合的基本概念。
+                </p>
+                <a
+                  href="#"
+                  class="btn primary-600-border text-primary-600 fw-bolder w-100"
+                  >開始學習</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div class="card border-0">
+              <div>
+                <img
+                  src="/assets/images/unsplash_x07ELaNFt34.png"
+                  class="card-img-top chart-image position-relative"
+                  alt="台股選股與佈局技巧"
+                />
+                <span
+                  class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
+                  >進階策略</span
+                >
+                <img
+                  src="/assets/images/heart.svg"
+                  alt="heart"
+                  class="favorite position-absolute"
+                />
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1">5.0</p>
+                  </div>
+                  <p class="pt-4">12 個章節・3 小時</p>
+                </div>
+                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500">
+                  台股選股與佈局技巧
+                </h5>
+                <p class="card-text fs-lg-5">
+                  從實戰案例出發，學會評估產業趨勢與公司體質，強化投資決策。
+                </p>
+                <a
+                  href="#"
+                  class="btn primary-600-border text-primary-600 fw-bolder w-100"
+                  >開始學習</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div class="card border-0">
               <img
-                src="/assets/images/heart.svg"
-                alt="heart"
-                class="favorite position-absolute"
+                src="/assets/images/unsplash_DfjJMVhwH_8.png"
+                class="card-img-top chart-image position-relative"
+                alt="台股投資實戰案例"
               />
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                  <img src="/assets/images/star.svg" alt="star" />
-                  <p class="pt-4 ps-1">5.0</p>
-                </div>
-                <p class="pt-4">12 個章節・3 小時</p>
-              </div>
-              <h5 class="card-title fs-lg-4 fw-bolder text-primary-500">
-                台股選股與佈局技巧
-              </h5>
-              <p class="card-text fs-lg-5">
-                從實戰案例出發，學會評估產業趨勢與公司體質，強化投資決策。
-              </p>
-              <a
-                href="#"
-                class="btn primary-600-border text-primary-600 fw-bolder w-100"
-                >開始學習</a
+              <span
+                class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
+                >實戰案例</span
               >
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img
+                      src="/assets/images/star.svg"
+                      alt="star"
+                      class="w-100"
+                    />
+                    <p class="pt-4 ps-1">4.0</p>
+                  </div>
+                  <p class="pt-4">12 個章節・3 小時</p>
+                </div>
+                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                  台股投資實戰案例
+                </h5>
+                <p class="card-text fs-lg-5">
+                  台股實戰案例帶你學習看懂公司基本面，打造專屬投資組合。
+                </p>
+                <a
+                  href="#"
+                  class="btn primary-600-border text-primary-600 fw-bolder w-100"
+                  >開始學習</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-9 col-lg-4">
-          <div class="card border-0">
-            <img
-              src="/assets/images/unsplash_DfjJMVhwH_8.png"
-              class="card-img-top chart-image position-relative"
-              alt="台股投資實戰案例"
-            />
-            <span
-              class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
-              style="width: 64px"
-              >實戰案例</span
-            >
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                  <img src="/assets/images/star.svg" alt="star" class="w-100" />
-                  <p class="pt-4 ps-1">4.0</p>
-                </div>
-                <p class="pt-4">12 個章節・3 小時</p>
-              </div>
-              <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
-                台股投資實戰案例
-              </h5>
-              <p class="card-text fs-lg-5">
-                台股實戰案例帶你學習看懂公司基本面，打造專屬投資組合。
-              </p>
-              <a
-                href="#"
-                class="btn primary-600-border text-primary-600 fw-bolder w-100"
-                >開始學習</a
-              >
-            </div>
-          </div>
-        </div>
+        <img
+          src="/assets/images/arrowLeft.svg"
+          alt="arrowLeft "
+          class="d-none d-lg-block arrowLeft position-absolute"
+        />
+        <img
+          src="/assets/images/arrowRight.svg"
+          alt="arrowRight "
+          class="d-none d-lg-block arrowRight position-absolute"
+        />
+        <button
+          class="d-none d-lg-block btn btn-primary-600 mt-lg-80 p-4 fw-bolder mx-auto"
+          type="button"
+        >
+          更多課程
+          <span class="material-icons-outlined align-bottom"> ads_click </span>
+        </button>
       </div>
+      <!-- desktopSectionBg1 -->
+
       <img
-        src="/assets/images/arrowLeft.svg"
-        alt="arrowLeft "
-        class="d-none d-lg-block arrowLeft position-absolute"
+        src="/assets/images/Section1 - BG 1.png"
+        alt="Section1bg1"
+        class="position-absolute sectionOneBgOne d-none d-lg-flex"
+        style="top: -150px"
       />
-      <img
-        src="/assets/images/arrowRight.svg"
-        alt="arrowRight "
-        class="d-none d-lg-block arrowRight position-absolute"
-      />
-      <button
-        class="d-none d-lg-block btn btn-primary-600 mt-lg-80 p-4 fw-bolder mx-auto"
-        type="button"
-      >
-        更多課程
-        <span class="material-icons-outlined align-bottom"> ads_click </span>
-      </button>
     </div>
 
     <!-- 真實回饋 -->
     <!--用戶真實回饋-->
-    <div class="container my-lg-100">
-      <div class="text-center mb-5 mb-lg-7">
-        <h2
-          class="section-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-2 mb-lg-4"
-        >
-          用戶真實回饋
-        </h2>
-        <p class="text-grayscale-700 fw-bolder fs-lg-3">
-          超過 10,000+ 學員的學習見證
-        </p>
+    <div class="position-relative z-0">
+      <div class="container my-lg-100">
+        <div class="text-center mb-5 mb-lg-7">
+          <h2
+            class="section-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-2 mb-lg-4"
+          >
+            用戶真實回饋
+          </h2>
+          <p class="text-grayscale-700 fw-bolder fs-lg-3">
+            超過 10,000+ 學員的學習見證
+          </p>
+        </div>
+        <div class="row d-flex overflow-auto f-nowrap">
+          <div class="col-9 col-lg-3">
+            <div
+              class="primary-100-border bg-grayscale-100"
+              style="height: 280px"
+            >
+              <div class="pt-5 px-5">
+                <div class="d-flex">
+                  <img
+                    src="/assets/images/Rectangle 1.png"
+                    class="rounded-circle me-2"
+                    alt="person1"
+                    style="width: 48px; height: 48px"
+                  />
+                  <div>
+                    <p class="fs-5 fw-bolder mb-0">林育暄</p>
+                    <p class="fs-sm fw-bolder text-grayscale-700">上班族</p>
+                  </div>
+                </div>
+                <p>
+                  「以前對股市一竅不通，Fundmeup
+                  的初學者課程真的超清楚，連我這種完全沒背景的人都能聽懂，現在下單都更有信心了！」
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-3">
+            <div
+              class="primary-100-border bg-grayscale-100"
+              style="height: 280px"
+            >
+              <div class="pt-5 px-5">
+                <div class="d-flex">
+                  <img
+                    src="/assets/images/Rectangle 3.png"
+                    class="rounded-circle me-2"
+                    alt="person2"
+                    style="width: 48px; height: 48px"
+                  />
+                  <div>
+                    <p class="fs-5 fw-bolder mb-0">張家豪</p>
+                    <p class="fs-sm fw-bolder text-grayscale-700">機械工程師</p>
+                  </div>
+                </div>
+                <p>
+                  「平常工作很忙，根本沒時間看盤。Fundmeup
+                  的策略教學幫我建立了自己的選股邏輯，投資變得更有效率！」
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-3">
+            <div
+              class="primary-100-border bg-grayscale-100"
+              style="height: 280px"
+            >
+              <div class="pt-5 px-5">
+                <div class="d-flex">
+                  <img
+                    src="/assets/images/person-3.svg"
+                    class="rounded-circle me-2"
+                    alt="person3"
+                    style="width: 48px; height: 48px"
+                  />
+                  <div>
+                    <p class="fs-5 fw-bolder mb-0">陳宜柔</p>
+                    <p class="fs-sm fw-bolder text-grayscale-700">大學生</p>
+                  </div>
+                </div>
+                <p>
+                  「學校沒教的理財知識，我都在 Fundmeup
+                  學到，不只模擬投資很有趣，還能實際應用在現實中，CP 值超高！」
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-3">
+            <div
+              class="primary-100-border bg-grayscale-100"
+              style="height: 280px"
+            >
+              <div class="pt-5 px-5">
+                <div class="d-flex">
+                  <img
+                    src="/assets/images/Rectangle 5.png"
+                    class="rounded-circle me-2"
+                    alt="person4"
+                    style="width: 48px; height: 48px"
+                  />
+                  <div>
+                    <p class="fs-5 fw-bolder mb-0">吳柏睿</p>
+                    <p class="fs-sm fw-bolder text-grayscale-700">自營業者</p>
+                  </div>
+                </div>
+                <p>
+                  「以前買股票都是靠運氣，虧了不少。上完 Fund-meup
+                  的課之後，終於知道該怎麼看基本面和技術面，現在投資更穩健了！」
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row d-flex overflow-auto f-nowrap">
-        <div class="col-9 col-lg-3">
-          <div class="primary-100-border" style="height: 280px">
-            <div class="pt-5 px-5">
-              <div class="d-flex">
-                <img
-                  src="/assets/images/Rectangle 1.png"
-                  class="rounded-circle me-2"
-                  alt="person1"
-                  style="width: 48px; height: 48px"
-                />
-                <div>
-                  <p class="fs-5 fw-bolder mb-0">林育暄</p>
-                  <p class="fs-sm fw-bolder text-grayscale-700">上班族</p>
-                </div>
-              </div>
-              <p>
-                「以前對股市一竅不通，Fundmeup
-                的初學者課程真的超清楚，連我這種完全沒背景的人都能聽懂，現在下單都更有信心了！」
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-lg-3">
-          <div class="primary-100-border" style="height: 280px">
-            <div class="pt-5 px-5">
-              <div class="d-flex">
-                <img
-                  src="/assets/images/Rectangle 3.png"
-                  class="rounded-circle me-2"
-                  alt="person2"
-                  style="width: 48px; height: 48px"
-                />
-                <div>
-                  <p class="fs-5 fw-bolder mb-0">張家豪</p>
-                  <p class="fs-sm fw-bolder text-grayscale-700">機械工程師</p>
-                </div>
-              </div>
-              <p>
-                「平常工作很忙，根本沒時間看盤。Fundmeup
-                的策略教學幫我建立了自己的選股邏輯，投資變得更有效率！」
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-lg-3">
-          <div class="primary-100-border" style="height: 280px">
-            <div class="pt-5 px-5">
-              <div class="d-flex">
-                <img
-                  src="/assets/images/person-3.svg"
-                  class="rounded-circle me-2"
-                  alt="person3"
-                  style="width: 48px; height: 48px"
-                />
-                <div>
-                  <p class="fs-5 fw-bolder mb-0">陳宜柔</p>
-                  <p class="fs-sm fw-bolder text-grayscale-700">大學生</p>
-                </div>
-              </div>
-              <p>
-                「學校沒教的理財知識，我都在 Fundmeup
-                學到，不只模擬投資很有趣，還能實際應用在現實中，CP 值超高！」
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-9 col-lg-3">
-          <div class="primary-100-border" style="height: 280px">
-            <div class="pt-5 px-5">
-              <div class="d-flex">
-                <img
-                  src="/assets/images/Rectangle 5.png"
-                  class="rounded-circle me-2"
-                  alt="person4"
-                  style="width: 48px; height: 48px"
-                />
-                <div>
-                  <p class="fs-5 fw-bolder mb-0">吳柏睿</p>
-                  <p class="fs-sm fw-bolder text-grayscale-700">自營業者</p>
-                </div>
-              </div>
-              <p>
-                「以前買股票都是靠運氣，虧了不少。上完 Fund-meup
-                的課之後，終於知道該怎麼看基本面和技術面，現在投資更穩健了！」
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- desktopSectionBg1 -->
+
+      <img
+        src="/assets/images/Section1 - BG 1.png"
+        alt="Section1bg1"
+        class="position-absolute sectionOneBgOne d-none d-lg-flex"
+        style="bottom: -150px"
+      />
     </div>
 
     <!-- faq part -->
-    <div class="container">
-      <div class="text-center my-6 my-lg-100">
-        <h3 class="fs-3 fs-lg-1 fw-bolder mb-6 mb-lg-7">常見問題 FAQ</h3>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3 accordion-border">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button fw-bolder bg-grayscale-100 fs-md-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
+    <div class="position-relative z-0 overflow-hidden">
+      <div class="container z-0">
+        <div class="text-center my-6 my-lg-100">
+          <h3 class="fs-3 fs-lg-1 fw-bolder mb-6 mb-lg-7">常見問題 FAQ</h3>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 accordion-border">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bolder bg-grayscale-100 fs-md-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  我完全不懂投資也可以用嗎？
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                我完全不懂投資也可以用嗎？
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start">
-                <p class="fs-md-4">
-                  不用，這裡是學習、模擬觀察，不是交易平台。
-                </p>
+                <div class="accordion-body text-start">
+                  <p class="fs-md-4">
+                    不用，這裡是學習、模擬觀察，不是交易平台。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3 accordion-border">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed bg-primary-50 fw-bolder fs-md-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="true"
-                aria-controls="collapseTwo"
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 accordion-border">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-primary-50 fw-bolder fs-md-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  要不要綁定銀行或入金？
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
               >
-                要不要綁定銀行或入金？
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start">
-                <p class="fs-md-4">
-                  不用，這裡是學習、模擬觀察，不是交易平台。
-                </p>
+                <div class="accordion-body text-start">
+                  <p class="fs-md-4">
+                    不用，這裡是學習、模擬觀察，不是交易平台。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3 accordion-border">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed fw-bolder fs-md-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 accordion-border">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bolder fs-md-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  上面教的知識會很難嗎？
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                上面教的知識會很難嗎？
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start">
-                <p class="fs-md-4">
-                  不用，這裡是學習、模擬觀察，不是交易平台。
-                </p>
+                <div class="accordion-body text-start">
+                  <p class="fs-md-4">
+                    不用，這裡是學習、模擬觀察，不是交易平台。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3 accordion-border">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed fw-bolder fs-md-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 accordion-border">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bolder fs-md-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  我可以學完就去投資嗎？
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                我可以學完就去投資嗎？
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start">
-                <p class="fs-md-4">
-                  不用，這裡是學習、模擬觀察，不是交易平台。
-                </p>
+                <div class="accordion-body text-start">
+                  <p class="fs-md-4">
+                    不用，這裡是學習、模擬觀察，不是交易平台。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3 accordion-border">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed fw-bolder fs-md-4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 accordion-border">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bolder fs-md-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  這跟其他券商有何不同？
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                這跟其他券商有何不同？
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body text-start">
-                <p class="fs-md-4">
-                  不用，這裡是學習、模擬觀察，不是交易平台。
-                </p>
+                <div class="accordion-body text-start">
+                  <p class="fs-md-4">
+                    不用，這裡是學習、模擬觀察，不是交易平台。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- desktopSectionBg1 -->
+
+      <img
+        src="/assets/images/Section1 - BG 1.png"
+        alt="Section1bg1"
+        class="position-absolute sectionOneBgOne d-none d-lg-flex"
+        style="bottom: -80px"
+      />
     </div>
     <!-- 方案card -->
     <div class="container">
