@@ -8,6 +8,11 @@
   color: $primary-500;
   border-bottom: 3px solid $primary-500;
 }
+.course-tag-custom {
+  color: $primary-700;
+  background-color: $primary-100;
+  border-radius: 100px;
+}
 .course-tag-outline {
   border: 1px solid $grayscale-400;
   border-radius: 100px;
