@@ -2,7 +2,11 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.newsList {
+  background-color: $secondary-50;
+  border-radius: 9px;
+  border: 1px solid $secondary-500;
+}
 .newsBorderB {
   border-bottom: 1px solid $grayscale-400;
 }
