@@ -235,3 +235,23 @@
   color: $grayscale-700;
   text-align: right;
 }
+
+.accordion-button.accordion-bg-primary-50:not(.collapsed) {
+  background-color: $primary-50 !important;
+  color: inherit;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-button.accordion-bg-primary-50:not(.collapsed):hover,
+.accordion-button.accordion-bg-primary-50:not(.collapsed):focus,
+.accordion-button.accordion-bg-primary-50:not(.collapsed):active {
+  background-color: $primary-50 !important;
+  color: inherit;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion-button.accordion-bg-primary-50.collapsed:hover,
+.accordion-button.accordion-bg-primary-50.collapsed:focus {
+  background-color: rgba($primary-50, 0.5); /* 可自行調淡一點 */
+}
