@@ -7,6 +7,21 @@
   border-radius: 9px;
   border: 1px solid $secondary-500;
 }
+.newsList-secondary-500 {
+  border: 2px solid $secondary-500;
+}
+.newsList-secondary-400 {
+  border: 2px solid $secondary-400;
+}
+.newsList-secondary-300 {
+  border: 2px solid $secondary-300;
+}
+.newsList-secondary-200 {
+  border: 2px solid $secondary-200;
+}
+.newsList-secondary-100 {
+  border: 2px solid $secondary-100;
+}
 .newsBorderB {
   border-bottom: 1px solid $grayscale-400;
 }
@@ -33,6 +48,9 @@
 .card-body .btn:hover {
   color: $grayscale-100;
   background-color: $primary-600;
+}
+.background-primary-50 {
+  background-color: $primary-50;
 }
 /* louise */
 
@@ -146,6 +164,10 @@
     font-size: 1.5rem;
     margin: 2rem 0 1.5rem 0;
   }
+  .newsList {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -161,8 +183,32 @@
   .news-card {
     margin-bottom: 1rem;
   }
+  .newsList {
+    width: 40px;
+    height: 40px;
+  }
 }
 
+@media (max-width: 410px) {
+  .newsList {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 991px) {
+  .newsList {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  .newsList {
+    width: 72px;
+    height: 72px;
+  }
+}
 /* Header styling */
 .site-header {
   background: linear-gradient(
