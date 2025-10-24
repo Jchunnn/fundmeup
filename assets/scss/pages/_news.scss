@@ -60,6 +60,23 @@
 .primary-100-border-hover:hover {
   border-color: $primary-100;
 }
+.card-report {
+  border: none;
+}
+
+.card-report:hover {
+  border: 2px solid $primary-100;
+}
+.card-stable {
+  border: 2px solid $primary-100; /* 或其他顏色 */
+}
+@media (max-width: 1200px) {
+  .card-title {
+    font-size: 1rem !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
 /* louise */
 
 /* News Section */
