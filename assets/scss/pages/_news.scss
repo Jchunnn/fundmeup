@@ -70,13 +70,20 @@
 .card-stable {
   border: 2px solid $primary-100; /* 或其他顏色 */
 }
+.card-tsmc:hover .news-title,
+.card-tech:hover .news-title,
+.news-content:hover h3 {
+  color: $primary-500 !important;
+  cursor: pointer;
+}
 @media (max-width: 1210px) and (min-width: 991px) {
   .tsmc-description {
     display: none !important;
   }
 }
 .card-tsmc:hover,
-.card-tech:hover {
+.card-tech:hover,
+.news-card:hover {
   transition: none !important;
   transform: none !important;
   box-shadow: none !important;
@@ -120,7 +127,6 @@
 .news-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--primary);
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
