@@ -137,7 +137,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
+.bg-grayscale-100 {
+  background-color: $grayscale-300;
+}
+.sectionFourBg {
+  top: 0;
+}
 /* Responsive design */
 @media (max-width: 768px) {
   .news-grid {
@@ -207,6 +212,9 @@
   .newsList {
     width: 72px;
     height: 72px;
+  }
+  .text-center-lg {
+    text-align: center;
   }
 }
 /* Header styling */
