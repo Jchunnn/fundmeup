@@ -52,6 +52,14 @@
 .background-primary-50 {
   background-color: $primary-50;
 }
+
+.primary-100-border {
+  border-color: $primary-100;
+}
+
+.primary-100-border-hover:hover {
+  border-color: $primary-100;
+}
 /* louise */
 
 /* News Section */
@@ -144,6 +152,26 @@
   top: 0;
 }
 /* Responsive design */
+@media (min-width: 1100px) {
+  .arrowLeft-News {
+    top: 340px;
+    left: -30px;
+    cursor: pointer;
+  }
+  .arrowRight-News {
+    top: 340px;
+    right: -30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1099px) {
+  .arrowLeft-News {
+    display: none;
+  }
+  .arrowRight-News {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .news-grid {
     grid-template-columns: 1fr;
