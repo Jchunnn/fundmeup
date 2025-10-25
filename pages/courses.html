@@ -16,9 +16,19 @@
 
     <!-- 投資課程 -->
     <div class="container my-6 my-lg-100">
-      <h1 class="main-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-5">
-        投資課程
-      </h1>
+      <div class="d-flex justify-content-between">
+        <h1 class="main-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-5">
+          投資課程
+        </h1>
+        <div class="search-box">
+          <img
+            class="search-icon"
+            src="/assets/images/search.svg"
+            alt="search"
+          />
+          <input type="text" placeholder="搜尋…" />
+        </div>
+      </div>
       <!--課程  -->
       <ul
         class="d-flex justify-content-between ps-0 border-bottom justify-content-lg-start mb-lg-0"
@@ -33,53 +43,81 @@
         <a href="#" class="py-2 course-list"><li>進階策略</li></a>
       </ul>
       <!-- tag -->
-      <ul class="ps-0 justify-content-between py-5">
-        <a href="#">
-          <span class="badge course-tag-custom fw-normal fs-6 me-3 mb-3"
-            ><span class="material-icons-outlined align-bottom fs-6 pe-1">
-              check </span
-            >理財新手</span
+      <ul class="ps-0 justify-content-between py-5 d-lg-flex">
+        <div>
+          <a href="#">
+            <span class="badge course-tag-custom fw-normal fs-6 me-3 mb-3"
+              ><span class="material-icons-outlined align-bottom fs-6 pe-1">
+                check </span
+              >理財新手</span
+            >
+          </a>
+          <a href="#">
+            <span
+              class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
+              >股票新手教學</span
+            >
+          </a>
+          <a href="#">
+            <span
+              class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
+              >基金教學</span
+            >
+          </a>
+          <a href="#">
+            <span
+              class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
+              >ETF 是什麼</span
+            >
+          </a>
+          <a href="#">
+            <span
+              class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
+              >台股投資</span
+            >
+          </a>
+          <a href="#">
+            <span
+              class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3"
+              >什麼是指數投資</span
+            >
+          </a>
+        </div>
+        <div class="dropdown pt-5 pt-lg-0">
+          <button
+            class="btn btn-dropdown-outline dropdown-toggle bg-primary-50 px-3 text-grayscale-700"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-        </a>
-        <a href="#">
-          <span
-            class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
-            >股票新手教學</span
-          >
-        </a>
-        <a href="#">
-          <span
-            class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
-            >基金教學</span
-          >
-        </a>
-        <a href="#">
-          <span
-            class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
-            >ETF 是什麼</span
-          >
-        </a>
-        <a href="#">
-          <span
-            class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3 mb-3"
-            >台股投資</span
-          >
-        </a>
-        <a href="#">
-          <span
-            class="badge course-tag-outline course-tag-color fw-normal fs-6 me-3"
-            >什麼是指數投資</span
-          >
-        </a>
+            由新至舊
+          </button>
+          <ul class="dropdown-menu text-center">
+            <li>
+              <a class="dropdown-item dropdown-word" href="#">由新至舊</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-word" href="#">由舊至新</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-word" href="#">最多觀看</a>
+            </li>
+            <li>
+              <a class="dropdown-item dropdown-word" href="#">即將上架</a>
+            </li>
+          </ul>
+        </div>
       </ul>
       <!-- course first part-->
-      <div class="row d-flex overflow-auto f-nowrap mb-5">
-        <div class="col-9 col-lg-4">
+      <div class="row d-flex">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
                 src="/assets/images/invest-1.svg"
-                class="card-img-top chart-image position-relative"
+                class="card-img-top chart-image-course position-relative"
                 alt="股票投資基礎入門"
                 title="股票投資基礎入門"
               />
@@ -87,9 +125,9 @@
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -97,25 +135,38 @@
                     />
                     <p class="pt-4 ps-1">0.0</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">12 個章節・3 小時</p>
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    12 個章節・3 小時
+                  </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   股票投資基礎入門
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   從認識股票開始，學習如何分析公司基本面，建立投資組合的基本概念。
                 </p>
                 <p class="fs-sm text-grayscale-700">林宇謙 / 金融界大佬</p>
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-9 col-lg-4">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
                 src="/assets/images/invest-2.svg"
-                class="card-img-top chart-image position-relative"
+                class="card-img-top chart-image-course position-relative"
                 alt="善用時間複利創造財富"
                 title="善用時間複利創造財富"
               />
@@ -123,9 +174,11 @@
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div
+                    class="course-rating-big d-none d-lg-flex align-items-center"
+                  >
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -133,39 +186,51 @@
                     />
                     <p class="pt-4 ps-1">4.5</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">
-                    5 個章節 ・ 1 小時
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    12 個章節・3 小時
                   </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   善用時間複利創造財富
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   從複利公式談長期投資的價值。
                 </p>
-                <p class="fs-sm text-grayscale-700">
-                  邱亦霖 / 理財部落客 學員數或開課日
-                </p>
+                <p class="fs-sm text-grayscale-700">邱亦霖 / 理財部落客</p>
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">4.5</p>
+                  </div>
+                  <img
+                    src="/assets/images/fullGrayHeart.svg"
+                    alt="gray-heart"
+                  />
+                </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-9 col-lg-4">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
                 src="/assets/images/invest-3.svg"
-                class="card-img-top chart-image position-relative"
-                alt=" 被動收入入門指南"
+                class="card-img-top chart-image-course position-relative"
+                alt="被動收入入門指南"
                 title="被動收入入門指南"
               />
               <span
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="course-rating-big d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -173,32 +238,41 @@
                     />
                     <p class="pt-4 ps-1">4.8</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">
-                    6 個章節 ・ 1.5 小時
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    6 個章節・1.5 小時
                   </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   被動收入入門指南
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   掌握多元收入來源的管道與建立方法。
                 </p>
-                <p class="fs-sm text-grayscale-700">
-                  沈佳玲 / 理財顧問 學員數或開課日
-                </p>
+                <p class="fs-sm text-grayscale-700">沈佳玲 / 理財顧問</p>
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">4.8</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
       </div>
       <!-- course second part-->
-      <div class="row d-flex overflow-auto f-nowrap">
-        <div class="col-9 col-lg-4">
+      <div class="row d-flex">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
                 src="/assets/images/invest-4.svg"
-                class="card-img-top chart-image position-relative"
+                class="card-img-top chart-image-course position-relative"
                 alt="財報讀懂關鍵術：從數字看出好壞公司"
                 title="財報讀懂關鍵術：從數字看出好壞公司"
               />
@@ -206,9 +280,9 @@
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -216,27 +290,40 @@
                     />
                     <p class="pt-4 ps-1">4.6</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">
-                    10 個章節 ・ 3 小時
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    10 個章節・3 小時
                   </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   財報讀懂關鍵術：從數字看出好壞公司
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   學會從損益表、資產負債表與現金流報表看懂企業體質。
                 </p>
+
                 <p class="fs-sm text-grayscale-700">李建誠 / 會計師養成導師</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-9 col-lg-4">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
                 src="/assets/images/invest-5.svg"
-                class="card-img-top chart-image position-relative"
+                class="card-img-top chart-image-course position-relative"
                 alt="存股人生：打造每月配息現金流"
                 title="存股人生：打造每月配息現金流"
               />
@@ -244,9 +331,9 @@
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -254,27 +341,40 @@
                     />
                     <p class="pt-4 ps-1">4.3</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">
-                    9 個章節 ・ 2.5 小時
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    9 個章節・2.5 小時
                   </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   存股人生：打造每月配息現金流
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   深入探討高股息策略與殖利率陷阱，規劃長期配息資產。
                 </p>
+
                 <p class="fs-sm text-grayscale-700">黃小刪 / 退休理財專家</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-9 col-lg-4">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
-                src="/assets/images/invest-6.svg"
-                class="card-img-top chart-image position-relative"
+                src="/assets/images/invest-4.svg"
+                class="card-img-top chart-image-course position-relative"
                 alt="善用時間複利創造財富"
                 title="善用時間複利創造財富"
               />
@@ -282,9 +382,9 @@
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
                 >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="course-rating-big d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
@@ -292,66 +392,228 @@
                     />
                     <p class="pt-4 ps-1">4.5</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">5 個章節・1 小時</p>
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    5 個章節・1 小時
+                  </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
                   善用時間複利創造財富
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
                   從複利公式談長期投資的價值。
                 </p>
+
                 <p class="fs-sm text-grayscale-700">邱亦霖 / 理財部落客</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
       </div>
-    </div>
-    <!-- 最多觀看 -->
-    <div class="container my-6 my-lg-100">
-      <h1 class="main-title fs-3 fs-lg-1 fw-bolder text-grayscale-900 mb-5">
-        最多觀看
-      </h1>
-      <!-- course first part-->
-      <div class="row d-flex overflow-auto f-nowrap mb-5">
-        <div class="col-9 col-lg-3">
+      <!-- course third part-->
+      <div class="row d-flex">
+        <div class="col-lg-4">
           <a href="#">
-            <div class="card border-0">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
               <img
-                src="/assets/images/invest-1.svg"
-                class="card-img-top chart-image position-relative"
-                alt="台股新手教戰守則"
-                title="台股新手教戰守則"
+                src="/assets/images/invest-4.svg"
+                class="card-img-top chart-image-course position-relative"
+                alt="財報讀懂關鍵術：從數字看出好壞公司"
+                title="財報讀懂關鍵術：從數字看出好壞公司"
               />
               <span
                 class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
-                >新手入門</span
+                >理財新手</span
               >
-              <div class="card-body p-0">
+              <div class="card-body pt-0">
                 <div class="d-flex justify-content-between">
-                  <div class="d-flex">
+                  <div class="d-none d-lg-block d-lg-flex">
                     <img
                       src="/assets/images/star.svg"
                       alt="star"
                       class="fs-5"
                     />
-                    <p class="pt-4 ps-1">0.0</p>
+                    <p class="pt-4 ps-1">4.6</p>
                   </div>
-                  <p class="pt-4 fs-sm text-grayscale-700">12 個章節・3 小時</p>
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    10 個章節・3 小時
+                  </p>
                 </div>
-                <h5 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
-                  台股新手教戰守則
-                </h5>
-                <p class="card-text fs-lg-5 text-grayscale-700">
-                  從認識股票開始，學習如何分析公司基本面，建立投資組合的基本概念。
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                  財報讀懂關鍵術：從數字看出好壞公司
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
+                  學會從損益表、資產負債表與現金流報表看懂企業體質。
                 </p>
-                <p class="fs-sm text-grayscale-700">林宇謙 / 金融界大佬</p>
+
+                <p class="fs-sm text-grayscale-700">李建誠 / 會計師養成導師</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="#">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
+              <img
+                src="/assets/images/invest-5.svg"
+                class="card-img-top chart-image-course position-relative"
+                alt="存股人生：打造每月配息現金流"
+                title="存股人生：打造每月配息現金流"
+              />
+              <span
+                class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
+                >理財新手</span
+              >
+              <div class="card-body pt-0">
+                <div class="d-flex justify-content-between">
+                  <div class="d-none d-lg-block d-lg-flex">
+                    <img
+                      src="/assets/images/star.svg"
+                      alt="star"
+                      class="fs-5"
+                    />
+                    <p class="pt-4 ps-1">4.3</p>
+                  </div>
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    9 個章節・2.5 小時
+                  </p>
+                </div>
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                  存股人生：打造每月配息現金流
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
+                  深入探討高股息策略與殖利率陷阱，規劃長期配息資產。
+                </p>
+
+                <p class="fs-sm text-grayscale-700">黃小刪 / 退休理財專家</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="#">
+            <div
+              class="card d-flex flex-row align-items-start border-0 flex-lg-column"
+            >
+              <img
+                src="/assets/images/invest-4.svg"
+                class="card-img-top chart-image-course position-relative"
+                alt="善用時間複利創造財富"
+                title="善用時間複利創造財富"
+              />
+              <span
+                class="badge bg-secondary-100 text-primary-700 fs-sm py-1 position-absolute course-badge"
+                >理財新手</span
+              >
+              <div class="card-body pt-0">
+                <div class="d-flex justify-content-between">
+                  <div class="course-rating-big d-none d-lg-block d-lg-flex">
+                    <img
+                      src="/assets/images/star.svg"
+                      alt="star"
+                      class="fs-5"
+                    />
+                    <p class="pt-4 ps-1">4.5</p>
+                  </div>
+                  <p class="d-none d-lg-block pt-4 fs-sm text-grayscale-700">
+                    5 個章節・1 小時
+                  </p>
+                </div>
+                <h6 class="card-title fs-lg-4 fw-bolder text-primary-500-hover">
+                  善用時間複利創造財富
+                </h6>
+                <p
+                  class="d-none d-lg-block card-text fs-lg-5 text-grayscale-700"
+                >
+                  從複利公式談長期投資的價值。
+                </p>
+
+                <p class="fs-sm text-grayscale-700">邱亦霖 / 理財部落客</p>
+
+                <div class="d-flex justify-content-between d-lg-none">
+                  <div class="d-flex">
+                    <img src="/assets/images/star.svg" alt="star" />
+                    <p class="pt-4 ps-1 fs-12 text-grayscale-700">0.0</p>
+                  </div>
+                  <img src="/assets/images/gray-heart.svg" alt="gray-heart" />
+                </div>
               </div>
             </div>
           </a>
         </div>
       </div>
     </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link bg-grayscale-200" href="#"
+            ><img src="/assets/images/smallLeftArrow.svg" alt="arrowLeft"
+          /></a>
+        </li>
+        <li class="page-item page-item-outline">
+          <a class="page-link text-primary-500" href="#">1</a>
+        </li>
+        <li class="page-item page-item-outline-hover">
+          <a class="page-link page-link-hover text-primary-500-hover" href="#"
+            >2</a
+          >
+        </li>
+        <li class="page-item page-item-outline-hover">
+          <a class="page-link page-link-hover text-primary-500-hover" href="#"
+            >...</a
+          >
+        </li>
+        <li class="page-item page-item-outline-hover">
+          <a class="page-link page-link-hover text-primary-500-hover" href="#"
+            >9</a
+          >
+        </li>
+        <li class="page-item page-item-outline-hover">
+          <a class="page-link page-link-hover text-primary-500-hover" href="#"
+            >10</a
+          >
+        </li>
+        <li class="page-item page-item-outline-hover">
+          <a class="page-link page-link-hover smallRightArrow-hover" href="#"
+            ><img src="/assets/images/smallRightArrow.svg" alt="arrowRight"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
     <%- include('./layout/footer'); -%>
 
