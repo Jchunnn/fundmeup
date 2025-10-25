@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (justLoggedIn === "true") {
     // 清除狀態，避免下次誤判
-    localStorage.removeItem("justLoggedIn");
+    /* localStorage.removeItem("justLoggedIn"); */
 
     // 修改樣式
     // 1. 隱藏登入按鈕
@@ -62,23 +62,4 @@ console.dir(staticBackdropThree);
 loginBtnMb?.addEventListener("click", () => {
   // 導頁至loginpage
   window.location.href = "loginpage.html";
-});
-
-// "DOMContentLoaded"：當 HTML 被完全載入並解析完成 時就會觸發，但不需要等圖片、樣式表或子框架（iframe）載入完成
-// 子框架: 子框架指的是在一個網頁中嵌入的「另一個網頁」。被嵌入的網頁就是「子框架」。這通常是透過 <iframe> 元素來實現。
-// "load": 要等整個頁面（圖片、CSS、iframe）全部載入 才觸發  ==> window.addEventListener("load", () => {})
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("🏅🏅🏅🏅");
-  // 檢查登入狀態
-  const justLoggedIn = localStorage.getItem("justLoggedIn");
-
-  if (justLoggedIn === "true") {
-    // 清除狀態，避免下次誤判
-    localStorage.removeItem("justLoggedIn");
-
-    // 修改樣式
-    // 1. 隱藏登入按鈕
-    loginBtnMb.style.display = "none";
-  }
 });
