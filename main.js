@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (justLoggedIn === "true") {
     // 清除狀態，避免下次誤判
-    /* localStorage.removeItem("justLoggedIn"); */
+    localStorage.removeItem("justLoggedIn");
 
     // 修改樣式
     // 1. 隱藏登入按鈕
