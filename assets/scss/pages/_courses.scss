@@ -81,10 +81,6 @@
   opacity: 0.6;
 }
 
-.course-rating-big {
-  width: 265px; /* 你可以依視覺微調 */
-}
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -119,5 +115,63 @@
   }
   .fs-lg-sm {
     font-size: 14px;
+  }
+}
+/* .star-icon {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .star-icon {
+    width: 14px;
+  }
+} */
+.course-rating-big {
+  width: 265px; /* 你可以依視覺微調 */
+}
+@media (max-width: 1400px) {
+  .course-rating-big {
+    width: 120px; /* 你可以依視覺微調 */
+  }
+}
+@media (max-width: 767.98px) {
+  .mobile-rating {
+    margin-top: auto;
+    align-items: flex-end; /* ⭐與♡貼底 */
+  }
+}
+
+/* .star-icon {
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+  align-items: center;
+} */
+.star-icon {
+  width: 15px;
+  height: auto;
+  position: relative;
+  top: 1px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .star-icon {
+    width: 14px;
+    top: -5px;
+  }
+}
+.heart-icon {
+  width: 20px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .mobile-rating p {
+    margin-bottom: 2px; /* 微調文字與星星的底線對齊 */
   }
 }
