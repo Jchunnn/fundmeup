@@ -1,0 +1,1 @@
+import"./bootstrap.min-C10LNqep.js";const n=document.getElementById("loginPageLoginBtn");console.log("loginPageLoginBtn",n);console.dir(n);n.addEventListener("click",()=>{localStorage.setItem("justLoggedIn","true"),window.location.href="index.html"});
